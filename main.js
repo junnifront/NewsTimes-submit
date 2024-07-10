@@ -2,7 +2,7 @@ API_KEY=`ea9e3222412340b794c8f0e70e1677e0`;
 let articles = [];
 const getLatestNews = async ()=> {
     let url = new URL(
-        `https://noona-times-be-5ca9402f90d9.herokuapp.com/top-headlines?country=kr&pageSize=${PAGE_SIZE}`
+        `https://noona-times-be-5ca9402f90d9.herokuapp.com/top-headlines?country=kr`
     );
     let menus = document.querySelectorAll("#menu-list button");
     menus.forEach((menu) =>
