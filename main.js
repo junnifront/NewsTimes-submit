@@ -28,17 +28,6 @@ const openSearchBox = () => {
   };
 
 
-  const getNewsByKeyword = () => {
-    const keyword = document.getElementById("search-input").value;
-  
-    page = 1;
-    url = new URL(
-      `https://noona-times-be-5ca9402f90d9.herokuapp.com/top-headlines?country=kr&pageSize=${PAGE_SIZE}`
-    );
-    getNews();
-  };
-
-
   document.getElementById("search-input").addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       getNewsByKeyword();
