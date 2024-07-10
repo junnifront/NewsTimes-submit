@@ -33,7 +33,7 @@ const openSearchBox = () => {
   
     page = 1;
     url = new URL(
-      `https://yuju-times.netlify.app/top-headlines?country=kr&pageSize=${PAGE_SIZE}&q=${keyword}`
+      `https://noona-times-be-5ca9402f90d9.herokuapp.com/top-headlines?country=kr&pageSize=${PAGE_SIZE}`
     );
     getNews();
   };
